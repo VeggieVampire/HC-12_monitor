@@ -38,6 +38,19 @@ Replace `deviceName` with the name of the target device and `ATcommand` with the
 - 57600bps ~ 100m
 - 115200bps ~ 100m
 
+**Transmitting Power Settings:**
+- `AT+Px` - Set transmitting power of module, x is optional from 1 to 8
+| Power Level (x) | Transmitter Power (dBm) |
+|-----------------|-------------------------|
+| 1               | -1 dBm                  |
+| 2               | 2 dBm                   |
+| 3               | 5 dBm                   |
+| 4               | 8 dBm                   |
+| 5               | 11 dBm                  |
+| 6               | 14 dBm                  |
+| 7               | 14 dBm                  |
+| 8               | 20 dBm                  |
+
 **Other Useful Commands:**
 
 - `AT+RX` - Retrieve all parameters: mode, channel, baud rate, and power.
