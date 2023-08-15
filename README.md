@@ -40,16 +40,17 @@ Replace `deviceName` with the name of the target device and `ATcommand` with the
 
 **Transmitting Power Settings:**
 - `AT+Px` - Set transmitting power of module, x is optional from 1 to 8
-| Power Level (x) | Transmitter Power (dBm) |
-|-----------------|-------------------------|
-| 1               | -1 dBm                  |
-| 2               | 2 dBm                   |
-| 3               | 5 dBm                   |
-| 4               | 8 dBm                   |
-| 5               | 11 dBm                  |
-| 6               | 14 dBm                  |
-| 7               | 14 dBm                  |
-| 8               | 20 dBm                  |
+- Power Level (x) ~ Transmitter Power (dBm) 
+-  1 ~  -1 dBm
+- 2 ~  2 dBm
+- 3 ~ 5 dBm
+- 4 ~ 8 dBm
+- 5 ~ 11 dBm
+- 6 ~ 14 dBm
+- 7 ~ 14 dBm
+- 8 ~ 20 dBm
+The default value is 8, and the higher the transmitting power is, the farther the communication distance is. When the transmitting power level is set to 1, the transmitting power is the minimum. Generally speaking, every time the transmitting power is reduced by 6dB, the communication distance will be reduced by half.
+e.g.: Send “AT+P5” command to module, and the module returns “OK+P5”.
 
 **Other Useful Commands:**
 
