@@ -59,3 +59,6 @@ e.g.: Send “AT+P5” command to module, and the module returns “OK+P5”.
 - `AT+DEFAULT` - Reset module parameters to default settings.
 
 These commands provide you with a convenient way to monitor remote devices and remotely manage them using the HC12 module. Make sure to refer to the device documentation for a comprehensive list of available AT commands and functionalities.
+
+**Circuit Diagram:**
+![Circuit Diagram](https://raw.githubusercontent.com/VeggieVampire/HC-12_monitor/main/HC-12_Arduino_bb.png)
